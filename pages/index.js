@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import Searchbar from '../components/searchbar';
+import Searchbar from "./accueil/components/Searchbar";
+import styled from "styled-components";
+import Accueil from "./accueil/Accueil";
 
 export default function Home() {
   return (
@@ -8,10 +10,7 @@ export default function Home() {
       <Head>
         <title> Tout sur ma ville</title>
       </Head>
-      <section id="home">
-        <h1 className="titre_principal"> Tout sur ma ville</h1>
-        <Searchbar />
-      </section>
+      <Accueil />
     </Layout>
   );
 }
